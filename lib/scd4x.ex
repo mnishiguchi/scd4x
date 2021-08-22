@@ -1,6 +1,6 @@
-defmodule Scd4x do
+defmodule SCD4X do
   @moduledoc """
-  Documentation for `Scd4x`.
+  Documentation for `SCD4X`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Scd4x do
 
   ## Examples
 
-      iex> Scd4x.hello()
+      iex> SCD4X.hello()
       :world
 
   """

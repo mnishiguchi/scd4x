@@ -1,4 +1,4 @@
-defmodule Scd4x.MixProject do
+defmodule SCD4X.MixProject do
   use Mix.Project
 
   def project do

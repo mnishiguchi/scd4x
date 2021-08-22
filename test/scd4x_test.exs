@@ -1,8 +1,8 @@
-defmodule Scd4xTest do
+defmodule SCD4XTest do
   use ExUnit.Case
-  doctest Scd4x
+  doctest SCD4X
 
   test "greets the world" do
-    assert Scd4x.hello() == :world
+    assert SCD4X.hello() == :world
   end
 end
