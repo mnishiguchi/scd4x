@@ -8,7 +8,7 @@ defmodule SCD4X.MixProject do
     [
       app: :scd4x,
       version: @version,
-      description: "Use Sensirion SCD4X CO2 sensor in Elixir",
+      description: "Use Sensirion SCD4x CO2 sensors (SCD40 and SCD41) in Elixir",
       elixir: "~> 1.11",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,

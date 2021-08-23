@@ -5,7 +5,7 @@
 [![CI](https://github.com/mnishiguchi/scd4x/actions/workflows/ci.yml/badge.svg)](https://github.com/mnishiguchi/scd4x/actions/workflows/ci.yml)
 [![Hex](https://github.com/mnishiguchi/scd4x/actions/workflows/hex.yml/badge.svg)](https://github.com/mnishiguchi/scd4x/actions/workflows/hex.yml)
 
-Use [Sensirion SCD4X](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensor-scd4x) [CO2](https://en.wikipedia.org/wiki/Carbon_dioxide) sensor in Elixir.
+Use [Sensirion SCD4X](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensor-scd4x) [CO2](https://en.wikipedia.org/wiki/Carbon_dioxide) sensors (SCD40 and SCD41) in Elixir.
 
 ## Usage
 
