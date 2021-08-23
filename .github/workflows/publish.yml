@@ -1,4 +1,4 @@
-name: Hex
+name: Publish
 on:
   push:
     tags: ['v*']

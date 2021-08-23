@@ -3,7 +3,7 @@
 [![Hex version](https://img.shields.io/hexpm/v/scd4x.svg 'Hex version')](https://hex.pm/packages/scd4x)
 [![API docs](https://img.shields.io/hexpm/v/scd4x.svg?label=docs 'API docs')](https://hexdocs.pm/scd4x)
 [![CI](https://github.com/mnishiguchi/scd4x/actions/workflows/ci.yml/badge.svg)](https://github.com/mnishiguchi/scd4x/actions/workflows/ci.yml)
-[![Hex](https://github.com/mnishiguchi/scd4x/actions/workflows/hex.yml/badge.svg)](https://github.com/mnishiguchi/scd4x/actions/workflows/hex.yml)
+[![Publish](https://github.com/mnishiguchi/scd4x/actions/workflows/publish.yml/badge.svg)](https://github.com/mnishiguchi/scd4x/actions/workflows/publish.yml)
 
 Use [Sensirion SCD4X](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensor-scd4x) [CO2](https://en.wikipedia.org/wiki/Carbon_dioxide) sensors (SCD40 and SCD41) in Elixir.
 
