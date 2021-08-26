@@ -16,20 +16,9 @@ iex> {:ok, scd} = SCD4X.start_link(bus_name: "i2c-1")
 {:ok, #PID<0.1407.0>}
 ```
 
-### Single shot measurement
+### Periodic measurement
 
-```elixir
-iex> SCD4X.measure_single_shot(scd)
-{:ok,
- %SCD4X.Measurement{
-   co2_ppm: 638,
-   humidity_rh: 70.49713134765625,
-   temperature_c: 26.63848876953125,
-   timestamp_ms: 400768
- }}
-```
-
-### Periodical measurement
+The sensor updates the measurement every 5 seconds once the periodic measurement is started.
 
 ```elixir
 iex> SCD4X.start_periodic_measurement(scd)
@@ -46,4 +35,19 @@ iex> SCD4X.measure(scd)
 
 SCD4X.stop_periodic_measurement(scd)
 :ok
+```
+
+### Single shot measurement
+
+The measurement can be performed on demand without the periodic measurement.
+
+```elixir
+iex> SCD4X.measure(scd, :single_shot)
+{:ok,
+ %SCD4X.Measurement{
+   co2_ppm: 638,
+   humidity_rh: 70.49713134765625,
+   temperature_c: 26.63848876953125,
+   timestamp_ms: 400768
+ }}
 ```

@@ -40,7 +40,12 @@ defmodule SCD4X do
     GenServer.call(server, :measure, 10_000)
   end
 
-  @spec measure_single_shot(GenServer.server()) :: {:ok, SCD4X.Measurement.t()} | {:error, any}
+  @spec measure(GenServer.server(), :single_shot) :: {:ok, SCD4X.Measurement.t()} | {:error, any}
+  def measure(server, :single_shot) do
+    GenServer.call(server, :measure_single_shot, 10_000)
+  end
+
+  @deprecated "Use measure/2 with :single_shot option instead"
   def measure_single_shot(server) do
     GenServer.call(server, :measure_single_shot, 10_000)
   end
