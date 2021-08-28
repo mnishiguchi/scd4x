@@ -44,4 +44,30 @@ defmodule SCD4X.Calc do
       end
     end)
   end
+
+  @doc """
+  Converts humidity sensor signal to humidity RH.
+
+  ## Examples
+
+      iex> humidity_rh_from_raw(0x5eb9) |> trunc
+      37
+
+  """
+  def humidity_rh_from_raw(raw_rh) do
+    100 * raw_rh / 0xFFFF
+  end
+
+  @doc """
+  Converts temperature sensor signal to temperature C.
+
+  ## Examples
+
+      iex> temperature_c_from_raw(0x6667) |> trunc
+      25
+
+  """
+  def temperature_c_from_raw(raw_temp) do
+    -45 + 175 * raw_temp / 0xFFFF
+  end
 end

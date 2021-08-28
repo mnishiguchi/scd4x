@@ -17,17 +17,9 @@ defmodule SCD4X.Measurement do
   def from_raw(<<co2_ppm::16, _crc1, raw_temp::16, _crc2, raw_rh::16, _crc3>>) do
     __struct__(
       co2_ppm: co2_ppm,
-      humidity_rh: humidity_rh_from_raw(raw_rh),
-      temperature_c: temperature_c_from_raw(raw_temp),
+      humidity_rh: SCD4X.Calc.humidity_rh_from_raw(raw_rh),
+      temperature_c: SCD4X.Calc.temperature_c_from_raw(raw_temp),
       timestamp_ms: System.monotonic_time(:millisecond)
     )
-  end
-
-  defp humidity_rh_from_raw(raw_rh) do
-    100 * raw_rh / 0xFFFF
-  end
-
-  defp temperature_c_from_raw(raw_temp) do
-    -45 + 175 * raw_temp / 0xFFFF
   end
 end
